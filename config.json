@@ -1,0 +1,21 @@
+{
+  "engine": "google",
+  "availableEngines": [
+    "google",
+    "yandex",
+    "duck",
+    "bing"
+  ],
+  "baseUrl": {
+    "google": "https://google.com/search?q=",
+    "yandex": "https://yandex.ru/search/?text=",
+    "duck": "https://duckduckgo.com/?q=",
+    "bing": "https://www.bing.com/search?q="
+  },
+  "description": {
+    "google": "Google",
+    "yandex": "Yandex",
+    "duck": "DuckDuckGo",
+    "bing": "Bing"
+  }
+}

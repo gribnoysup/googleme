@@ -1,0 +1,37 @@
+{
+  "name": "googleme",
+  "description": "Open selected search engine in a browser with a provided query from terminal",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "cli",
+    "terminal",
+    "open",
+    "browser",
+    "search",
+    "google",
+    "yandex",
+    "bing",
+    "duckduckgo"
+  ],
+  "bin": {
+    "googleme": "index.js"
+  },
+  "engines": { 
+    "node": "^6.11.5" 
+  },
+  "files": [
+    "index.js", 
+    "config.json"
+  ],
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "mri": "^1.1.0",
+    "opn": "^5.1.0"
+  },
+  "author": {
+    "name": "Sergey Petushkov",
+    "email": "petushkov.sergey@gmail.com",
+    "url": "https://github.com/gribnoysup"
+  }
+}
