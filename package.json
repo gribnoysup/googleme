@@ -1,7 +1,7 @@
 {
   "name": "googleme",
   "description": "Open selected search engine in a browser with a provided query from terminal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "keywords": [
     "cli",
@@ -17,11 +17,11 @@
   "bin": {
     "googleme": "index.js"
   },
-  "engines": { 
-    "node": "^6.11.5" 
+  "engines": {
+    "node": "^6.11.5"
   },
   "files": [
-    "index.js", 
+    "index.js",
     "config.json"
   ],
   "dependencies": {
