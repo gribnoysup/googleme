@@ -27,6 +27,8 @@ const commandArgs = mri(process.argv.slice(2), {
   string: ['default'],
 });
 
+const availableEngines = config.availableEngines.map(s => chalk.green.bold(s)).join(', ');
+
 const helpString = `
   Open selected search engine (Google by default) in a default browser with a provided query
 
@@ -39,7 +41,8 @@ const helpString = `
     -d, --duck              Use DuckDuckGo - https://duckduckgo.com/
     -b, --bing              Use Bing - https://www.bing.com/
 
-    -D, --default <engine>  Set default search engine to <engine>. Avaliable values are google, yandex, duck, bing
+    -D, --default <engine>  Set default search engine to <engine>.
+                            Avaliable values are ${availableEngines}
 
   Example:
     googleme how to cook an egg
@@ -64,8 +67,6 @@ const main = commandArgs => {
       fs.writeFileSync(configPath, newConfig, 'utf-8');
       console.log(`Default search engine is set to ${chalk.bold(description)} - ${displayUrl}`);
     } else {
-      const availableEngines = config.availableEngines.map(s => chalk.green.bold(s)).join(', ');
-
       console.log(`Unsupported search engine: "${newEngine}"`);
       console.log(`Avaliable values are ${availableEngines}`);
     }
