@@ -1,4 +1,4 @@
-# googleme <this>
+# googleme \<this\>
 
 ## How to use
 
