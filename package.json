@@ -1,7 +1,7 @@
 {
   "name": "googleme",
   "description": "Open selected search engine in a browser with a provided query from terminal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "keywords": [
     "cli",
@@ -14,7 +14,7 @@
     "bing",
     "duckduckgo"
   ],
-  "repository": { 
+  "repository": {
     "type": "git",
     "url": "https://github.com/gribnoysup/googleme.git"
   },
